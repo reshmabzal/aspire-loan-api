@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "b85d8ce0-9d25-42d2-ae72-b7af81592028",
+		"name": "Aspire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "customer_name",
+							"value": "Abzal",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abzal@example.info",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/add_customer",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"add_customer"
+					],
+					"query": [
+						{
+							"key": "customer_name",
+							"value": "Abzal",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "abzal@example.net",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer API Key",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "pouros.imani@example.org",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/get_key",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"get_key"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "prohaska.pink@example.com",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "82lp72d711d4k77s3ur8zv94kb4r8lh",
+							"type": "text"
+						},
+						{
+							"key": "amount_required",
+							"value": "10000",
+							"type": "text"
+						},
+						{
+							"key": "loan_term",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/create_loan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"create_loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Approve Loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aspire@123",
+							"type": "text"
+						},
+						{
+							"key": "loan_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/approve_loan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"approve_loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abzal@example.com",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "5trcseh4yuafj0164h9505o8a3ht9zw4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/view_loan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"view_loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Do Repayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abzal@example.com",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "5trcseh4yuafj0164h9505o8a3ht9zw4",
+							"type": "text"
+						},
+						{
+							"key": "loan_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "4273.14",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/repayment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"repayment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
