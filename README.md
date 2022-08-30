@@ -67,4 +67,7 @@ Approve loan API can be called by internal user where this user data will be ava
 <img width="1359" alt="image" src="https://user-images.githubusercontent.com/16385639/187501958-98a28ac4-ade2-4fa7-a77a-8da410a41383.png">
 </ul>
 <p>Unit testing covered with the Feature testing. Please run `vendor/bin/phpunit` to run the testing part.</p>
-<p>This is the overall flow of the project. Please reach me over my email if anything blocker.</p>
+<h4>Added postman collection. Please refer to the same.</h4>
+https://github.com/abzalsmart/aspire-loan-api/blob/main/Aspire.postman_collection.json
+<br><br>
+<p>Please reach me over my email if anything blocker.</p>
